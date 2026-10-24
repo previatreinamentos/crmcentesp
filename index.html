@@ -3,27 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carregando...</title>
-    
-    <!-- Redirecionamento de segurança via HTML -->
-    <meta http-equiv="refresh" content="0;url=https://previatreinamentos.github.io/crm/?embaixador=emb_sp_1792789123520">
-    
+    <title>Painel CRM</title>
     <style>
         html, body {
             margin: 0;
             padding: 0;
             width: 100%;
             height: 100%;
+            overflow: hidden;
             background-color: #ffffff;
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            display: block;
         }
     </style>
 </head>
 <body>
 
-    <!-- Redirecionamento principal via JavaScript -->
-    <script>
-        window.location.href = "https://previatreinamentos.github.io/crm/?embaixador=emb_sp_1792789123520";
-    </script>
+    <!-- Link exato do embaixador configurado para rodar em qualquer plataforma -->
+    <iframe 
+        src="https://github.io"
+        allow="geolocation; microphone; camera; clipboard-write"
+        sandbox="allow-scripts allow-same-origin allow-forms allow-popups allow-modals">
+    </iframe>
 
 </body>
 </html>
