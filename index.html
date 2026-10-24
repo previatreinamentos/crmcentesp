@@ -3,32 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carregando...</title>
+    <title>Carregando CRM...</title>
+    
+    <!-- Redirecionamento 1 (Caso o navegador esteja com o Javascript desligado) -->
+    <meta http-equiv="refresh" content="0;url=https://github.io">
+    
     <style>
         html, body {
             margin: 0;
             padding: 0;
             width: 100%;
             height: 100%;
-            overflow: hidden;
-            background-color: #000000;
-        }
-        iframe {
-            width: 100%;
-            height: 100%;
-            border: none;
-            display: block;
+            background-color: #ffffff; /* Fundo branco limpo durante o carregamento rápido */
         }
     </style>
 </head>
 <body>
 
-    <!-- O segredo está no atributo sandbox e allow abaixo -->
-    <iframe 
-        src="https://previatreinamentos.github.io/crmcentesp/" 
-        sandbox="allow-scripts allow-same-origin allow-forms allow-popups"
-        allow="geolocation; microphone; camera">
-    </iframe>
+    <!-- Redirecionamento 2 (Ação principal: joga o usuário direto para o link correto) -->
+    <script>
+        window.location.href = "https://github.io";
+    </script>
 
 </body>
 </html>
