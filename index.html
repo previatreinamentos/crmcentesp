@@ -5,16 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carregando...</title>
     <style>
-        /* Remove todas as margens e barras de rolagem da página principal */
         html, body {
             margin: 0;
             padding: 0;
             width: 100%;
             height: 100%;
             overflow: hidden;
-            background-color: #000000; /* Fundo preto caso o site demore a carregar */
+            background-color: #000000;
         }
-        /* Configura o iframe para ocupar a tela inteira de forma invisível/limpa */
         iframe {
             width: 100%;
             height: 100%;
@@ -25,8 +23,12 @@
 </head>
 <body>
 
-    <!-- IMPORTANTE: Substitua o link abaixo pela URL desejada -->
-    <iframe src="https://previatreinamentos.github.io/crm/?embaixador=emb_sp_1792789123520"></iframe>
+    <!-- O segredo está no atributo sandbox e allow abaixo -->
+    <iframe 
+        src="https://previatreinamentos.github.io/crmcentesp/" 
+        sandbox="allow-scripts allow-same-origin allow-forms allow-popups"
+        allow="geolocation; microphone; camera">
+    </iframe>
 
 </body>
 </html>
